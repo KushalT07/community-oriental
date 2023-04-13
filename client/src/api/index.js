@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://kushalt07.github.io/community-oriental/' });
+const API = axios.create({ baseURL: 'https://kushalt07.github.io/community-oriental/posts' });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
